@@ -1,4 +1,5 @@
 import React from 'react'
+import Temperature from './Temperature'
 
 function WeatherInfo() {
   return (
@@ -9,10 +10,7 @@ function WeatherInfo() {
             <span><i class="wi wi-night-sleet"></i></span>
         </div>
         <div className='weather-description'>
-            <div className='card temperature'>
-            <span><i className='wi wi-thermometer' ></i> </span>
-                <span> 23°</span>
-            </div>
+            <Temperature/>
             <div className='card weather-status'>
                 <span>status : windy</span>
             </div>
