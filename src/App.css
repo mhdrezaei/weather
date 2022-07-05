@@ -1,5 +1,12 @@
+
+
+
+
+
+
 .App {
   text-align: center;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -13,17 +20,89 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin: 5rem;
+}
+.container{
+  width: 70%;
+  margin: auto;
 }
 
+.weather{
+  width: 100%;
+  background-color: #d7d7d7;
+  border-radius: 2rem;
+  padding: 2rem;
+  box-shadow: inset 1px 1px 11px 5px #8c8c8c;
+}
+.under-elements{
+  width: 30%;
+    height: 3px;
+    color: #fff;
+    border-radius: 8%;
+    background-color: #fff;
+}
+.search-form{
+  position: relative;
+}
+.input-text{
+  font-family: cursive;
+  width: 100%;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    outline: none;
+    border: 1px solid #ececec;
+    padding: 0.5rem;
+    box-shadow: inset 1px 1px 3px 1px #6c6969;
+}
+.btn{
+  position: absolute;
+    font-size: 1.3rem;
+    top: 1px;
+    width: 15%;
+    right: -17px;
+    padding: 0.8rem;
+    border-radius: 0 1rem 1rem 0;
+    border: 0;
+    background-color: #1f2839;
+    color: #fff;
+}
+.weather-info{
+  margin: 1rem 2.5rem;
+}
+.weather-hr{
+  margin: 2.5rem;
+}
+.weather-icon span{
+  display: inline-block;
+  padding: 2rem;
+  background-color: #1f2839;
+  border-radius: 50%;
+  box-shadow: 1px 1px 7px 4px #888;
+}
+.weather-icon span i {
+  font-size: 8rem;
+}
+.weather-description{
+  display: flex;
+  justify-content: space-between;
+}
+.card{
+  padding: 5rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 5px 1px #888;
+}
+.card span{
+  color: #1f2839;
+  font-size: 2rem;
+}
 .App-link {
   color: #61dafb;
 }
