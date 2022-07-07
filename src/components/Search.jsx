@@ -1,12 +1,14 @@
 import React, { useState , useContext } from 'react'
 import WeatherContext from '../context/weatherContext'
+import Spinner from './Spinner';
 function Search() {
-    const {searchCity} = useContext(WeatherContext);
+    const {searchCity , isLoading , loading} = useContext(WeatherContext);
     const [city , setCity] =  useState('')
     
     const handleSearch = () => {
-        searchCity(city);
+        searchCity(city);  
     }
+   
   return (
     <>
         <div className='wrap' >
@@ -23,6 +25,7 @@ function Search() {
         </div>
     </>
   )
+   
 }
 
 export default Search

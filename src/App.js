@@ -1,11 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 import './assets/css/weather-icons.css'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Search from './components/Search';
 import WeatherInfo from './components/WeatherInfo';
 import { WeatherProvider } from './context/weatherContext';
 
 function App() {
+  
   return (
     <WeatherProvider>
     <div className="App">
@@ -22,6 +25,7 @@ function App() {
      </main>
      </div>
     </div>
+    <ToastContainer/>
     </WeatherProvider>
   );
 }
