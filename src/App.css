@@ -89,11 +89,14 @@ header {
   margin-bottom: 4rem;
 }
 .weather-icon span{
-  display: inline-block;
-  padding: 2rem;
-  background-color: #1f2839;
-  border-radius: 50%;
-  box-shadow: 1px 1px 7px 4px #888;
+  width: 12rem;
+    height: 12rem;
+    line-height: 12rem;
+    display: inline-block;
+    padding: 6rem 4rem 1rem;
+    background-color: #1f2839;
+    border-radius: 50%;
+    box-shadow: 1px 1px 7px 4px #888;
 }
 
 .weather-icon span i {

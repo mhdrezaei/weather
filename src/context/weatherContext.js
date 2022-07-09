@@ -14,6 +14,7 @@ export const WeatherProvider = ({children}) => {
     const [showInfo , setShowInfo] = useState(false);
     const [humidity , setHumidity] = useState()
     const [weatherStatus , setWeatherStatus] = useState()
+    const [weatherStatusClass , setWeatherStatusClass] = useState()
     const [windSpeed , setWindSpeed] = useState()
     const [windDeg , setWindDeg] = useState()
     const [visibility , setVisibility] = useState()
@@ -51,6 +52,7 @@ export const WeatherProvider = ({children}) => {
         const area = data.visibility/1000;
         setVisibility(area)
         setWeatherStatus(data.weather[0].description)
+        setWeatherStatusClass(data.weather[0].main)
 
 
         setShowInfo(true) 
@@ -80,7 +82,8 @@ export const WeatherProvider = ({children}) => {
         windSpeed,
         windDeg,
         weatherStatus,
-        visibility
+        visibility,
+        weatherStatusClass
 
     }}>{children}</WeatherContext.Provider>
 }
