@@ -5,9 +5,9 @@ import Temperature from "./Temperature";
 import Wind from "./Wind";
 import WeatherStatus from "./WeatherStatus";
 import sunny from "../assets/image/sunny.gif";
-import rainy from '../assets/image/rainy.gif'
-import snowy from '../assets/image/snowy.gif'
-import cloudy from '../assets/image/cloudy.gif'
+import rainy from "../assets/image/rainy.gif";
+import snowy from "../assets/image/snowy.gif";
+import cloudy from "../assets/image/cloudy.gif";
 
 function WeatherInfo() {
   const { showInfo, loading, weatherStatusClass } = useContext(WeatherContext);
@@ -40,21 +40,16 @@ function WeatherInfo() {
   if (showInfo && loading) {
     return (
       <>
-        <hr className="weather-hr" />
+        <hr className="w-full h-1 my-3 text-gray-600" />
         <div className="weather-info">
-          <div
-            className="weather-icon"
-            style={{
-              backgroundImage: `url(${weatherBackground})`,
-              backgroundRepeat: "none",
-              backgroundSize: "cover",
-            }}
-          >
+          <div className=" flex justify-center items-center w-24 h-24 mx-auto p-3 border border-gray-500 shadow-md rounded-full">
             <span>
-              <i class={`wi ${weatherClass}`}></i>
+              <i
+                className={`wi ${weatherClass}  text-gray-500 text-3xl my-auto`}
+              ></i>
             </span>
           </div>
-          <div className="weather-description">
+          <div className="grid grid-cols-3 col-span-1 md:col-span-3 gap-4 mt-12">
             <Temperature />
             <WeatherStatus />
             <Wind />

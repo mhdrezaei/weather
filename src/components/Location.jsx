@@ -1,14 +1,16 @@
-import React from 'react'
-import { useState , useContext } from 'react';
-import WeatherContext from '../context/weatherContext';
+import React from "react";
+import { useContext } from "react";
+import WeatherContext from "../context/weatherContext";
 
 function Location() {
-    const {city , country } = useContext(WeatherContext);
+  const { city, country } = useContext(WeatherContext);
   return (
-    <div className='card location'>
-                <span>{country} - {city}</span>
-            </div>
-  )
+    <div className="p-3 rounded-xl shadow-lg text-gray-600 card location">
+      <span>
+        {country} - {city}
+      </span>
+    </div>
+  );
 }
 
-export default Location
+export default Location;
