@@ -6,7 +6,7 @@ function Temperature() {
   const { temperature, minTemperature, maxTemperature } =
     useContext(WeatherContext);
   return (
-    <div className="col-span-1 p-3 rounded-xl shadow-lg bg-gray-50 text-gray-600 text-2xl">
+    <div className="col-span-1 p-3 rounded-xl shadow-inner bg-gray-700 bg-opacity-20 backdrop-blur-lg drop-shadow-lg text-2xl">
       <div className="flex flex-col justify-center items-center gap-8">
         <div className="flex flex-col justify-center items-center ">
           <div className="flex justify-center items-center gap-3">
