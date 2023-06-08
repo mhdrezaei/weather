@@ -2,7 +2,8 @@ import React, { useState, useContext } from "react";
 import WeatherContext from "../context/weatherContext";
 import Spinner from "./Spinner";
 function Search() {
-  const { searchCity, isLoading, loading } = useContext(WeatherContext);
+  const { searchCity, isLoading, loading, weatherData } =
+    useContext(WeatherContext);
   const [city, setCity] = useState("");
 
   const handleSearch = () => {

@@ -3,12 +3,15 @@ import { useContext } from "react";
 import WeatherContext from "../context/weatherContext";
 
 function Location() {
-  const { city, country } = useContext(WeatherContext);
+  const { weatherData } = useContext(WeatherContext);
+  const { city, country } = weatherData;
   return (
-    <div className="p-3 rounded-xl shadow-lg text-gray-600 card location">
-      <span>
-        {country} - {city}
-      </span>
+    <div className="col-span-1">
+      <div className="w-full h-full flex justify-center items-center  rounded-2xl p-8 shadow-inner bg-gray-700 bg-opacity-20 backdrop-blur-lg drop-shadow-lg">
+        <span className="text-2xl text-gray-700">
+          {country} - {city}
+        </span>
+      </div>
     </div>
   );
 }

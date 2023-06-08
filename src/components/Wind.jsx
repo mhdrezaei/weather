@@ -2,7 +2,8 @@ import React from "react";
 import { useContext } from "react";
 import WeatherContext from "../context/weatherContext";
 function Wind() {
-  const { windSpeed, windDeg, city, country } = useContext(WeatherContext);
+  const { weatherData} = useContext(WeatherContext);
+  const { windSpeed, windDeg, city, country } = weatherData
   return (
     <div className="col-span-1 p-3 rounded-xl shadow-lg text-gray-600 text-xl">
       <div className="d-flex">
