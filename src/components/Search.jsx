@@ -25,7 +25,7 @@ function Search() {
           />
           <button
             onClick={handleSearch}
-            className="absolute bg-gray-600 py-2 px-8 text-lg top-0 right-0 rounded-xl rounded-l-none"
+            className="absolute bg-gray-600 text-gray-800 py-2 px-6 md:px-8 text-lg top-0 right-0 rounded-xl rounded-l-none"
           >
             Search
           </button>

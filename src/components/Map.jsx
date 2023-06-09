@@ -14,7 +14,7 @@ function Map() {
     zoom: 11,
   };
   return (
-    <div className="col-span-4 h-72 rounded-lg overflow-hidden">
+    <div className="col-span-5 lg:col-span-4 h-72 rounded-lg overflow-hidden">
       <GoogleMapReact
         bootstrapURLKeys={{ key: "" }}
         defaultCenter={defaultProps.center}
